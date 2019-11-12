@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  .dashboard {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .controls {
+    padding: 35px 20px;
+    margin-bottom: 30px;
+    background-color: rgb(10, 10, 99);
+  }
+  
+  .input {
+    color: #171718;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #bdbdbd;
+    outline: 0;
+    margin-right: 10px;
+  }
+  
+  .balance {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  .history {
+    margin: 0 auto;
+  }
+  
+  .button {
+    display: inline-block;
+    min-width: 240px;
+    border: 0;
+    padding: 8px 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-radius: 3px;
+    background-color: #236be0;
+    transition: all 200ms ease;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .button[disabled] {
+    pointer-events: none;
+    background-color: #adadad;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: #1f65d6;
+  }
