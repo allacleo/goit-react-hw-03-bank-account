@@ -41,7 +41,7 @@ export default class Dashboard extends Component {
     };
 
 handleDeposit = amount => {
-    if (amount === 0 || amount === '') {
+    if (amount <= 0 || amount === '') {
         toast.info('Введите сумму для проведения операции!');
         return;
     }
@@ -61,7 +61,7 @@ handleDeposit = amount => {
 };
 
 handleWithdraw = amount => {
-    if (amount === 0 || amount === '') {
+    if (amount <= 0 || amount === '') {
         toast.info('Введите сумму для проведения операции!');
         return;
     }
